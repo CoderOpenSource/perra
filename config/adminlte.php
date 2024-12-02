@@ -322,8 +322,8 @@ return [
                     'icon' => 'fas fa-arrow-down',
                 ],
                 [
-                    'text' => 'Altas',
-                    'url'  => '#',
+                    'text' => 'Depreciación',
+                    'route'  => 'depreciacion.index',
                     'icon' => 'fas fa-arrow-up',
                 ],
                 [
@@ -397,7 +397,7 @@ return [
         ],
         [
             'text'    => 'MÓDULO TRASPASO',
-            
+
             'icon'    => 'fas fa-solid fa-users',
             'submenu' =>
             [

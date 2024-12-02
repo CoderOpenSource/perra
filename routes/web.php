@@ -165,6 +165,16 @@ Route::post('empresa/delete/{id}', [App\Http\Controllers\EmpresaController::clas
 Route::get('empresa/show/{id}', [App\Http\Controllers\EmpresaController::class, 'show'])->name('empresa.show');
 Route::post('empresa/reporte', [App\Http\Controllers\EmpresaController::class, 'reporte'])->name('empresa.reporte');
 
+// DEPRECIACIÓN
+Route::get('depreciacion/index', [App\Http\Controllers\DepreciacionController::class, 'index'])->name('depreciacion.index');
+Route::post('depreciacion/store', [App\Http\Controllers\DepreciacionController::class, 'store'])->name('depreciacion.store');
+Route::get('depreciacion/create', [App\Http\Controllers\DepreciacionController::class, 'create'])->name('depreciacion.create');
+Route::get('depreciacion/edit/{id}', [App\Http\Controllers\DepreciacionController::class, 'edit'])->name('depreciacion.edit');
+Route::post('depreciacion/update/{id}', [App\Http\Controllers\DepreciacionController::class, 'update'])->name('depreciacion.update');
+Route::post('depreciacion/{id}', [App\Http\Controllers\DepreciacionController::class, 'destroy'])->name('depreciacion.delete');
+Route::get('depreciacion/reporte/{id}', [App\Http\Controllers\DepreciacionController::class, 'reporte'])->name('depreciacion.reporte');
+
+
 
 // SOLICITUD
 Route::get('solicitud/index', [App\Http\Controllers\SolicitudController::class, 'index'])->name('solicitud.index');
